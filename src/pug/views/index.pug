@@ -1,0 +1,149 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title MONADA official page | официальный сайт
+  meta(name='description', content='Официальная страница группы МОНАДА слушайте новый сингл')
+  meta(name='google-site-verification', content='oaVEy3YoL6_wuzujWCf4wk3IUFb2QXqJPLINHN2cqhk')
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+  meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0', name='viewport')
+  link(rel='apple-touch-icon', sizes='57x57', href='/apple-icon-57x57.png')
+  link(rel='apple-touch-icon', sizes='60x60', href='/apple-icon-60x60.png')
+  link(rel='apple-touch-icon', sizes='72x72', href='/apple-icon-72x72.png')
+  link(rel='apple-touch-icon', sizes='76x76', href='/apple-icon-76x76.png')
+  link(rel='apple-touch-icon', sizes='114x114', href='/apple-icon-114x114.png')
+  link(rel='apple-touch-icon', sizes='120x120', href='/apple-icon-120x120.png')
+  link(rel='apple-touch-icon', sizes='144x144', href='/apple-icon-144x144.png')
+  link(rel='apple-touch-icon', sizes='152x152', href='/apple-icon-152x152.png')
+  link(rel='apple-touch-icon', sizes='180x180', href='/apple-icon-180x180.png')
+  link(rel='icon', type='image/png', sizes='192x192', href='android-icon-192x192.png')
+  link(rel='icon', type='image/png', sizes='32x32', href='favicon-32x32.png')
+  link(rel='icon', type='image/png', sizes='96x96', href='favicon-96x96.png')
+  link(rel='icon', type='image/png', sizes='16x16', href='favicon-16x16.png')
+  link(rel='manifest', href='/manifest.json')
+  meta(name='msapplication-TileColor', content='#ffffff')
+  meta(name='msapplication-TileImage', content='/ms-icon-144x144.png')
+  meta(name='theme-color', content='#ffffff')
+
+  // Yandex.Metrika counter
+  script(type='text/javascript').
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter50483029 = new Ya.Metrika2({
+            id: 50483029,
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+          });
+        } catch (e) {
+        }
+      });
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () {
+          n.parentNode.insertBefore(s, n);
+        };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else {
+        f();
+      }
+    })(document, window, "yandex_metrika_callbacks2");
+  noscript
+    div
+      img(src='https://mc.yandex.ru/watch/50483029', style='position:absolute; left:-9999px;', alt='')
+  // /Yandex.Metrika counter
+  link(rel='stylesheet', type='text/css', href='css/main.css')
+body
+  .player
+    //
+      <div class="playlist">
+      <div class="playlist__toggle">
+      <img src="images/down.svg" alt="" class="playlist__arrow">
+      Show Playlist
+      </div>
+      <div class="playlist__list"></div>
+      </div>
+    .player__cover-wrapper
+      img.player__cover(src='', alt='')
+    audio.player__audio(src='')
+    .player__info
+      .player__progress
+        .progress-bar
+          progress.progress-bar__progress.progress-bar__progress--current(min='0', max='100')
+          // <progress class="progress-bar__progress progress-bar__progress&#45;&#45;buffered"></progress>
+          .progress-bar__time
+            span.progress-bar__current 00:00
+            span.progress-bar__duration
+      .player__title
+        .player__song-name
+        .player__artist
+    .player__controls
+      .player__buttons
+        button.player__button.player__button--prev
+          img(src='images/previous.svg', alt='')
+        button.player__play.player__play--initial
+        button.player__button.player__button--next
+          img(src='images/next.svg', alt='')
+      .player__volume
+        img.player__volume-icon(src='images/volume.svg', alt='')
+        input.player__volume-bar(type='range', step='.1')
+  .yug-cover.song-select.page-cover(data-id='0')
+  .yug-cover.song-select.page-cover(data-id='1')
+  .yug-cover.song-select.page-cover(data-id='2')
+  .yug-cover.song-select.page-cover(data-id='3')
+  .yug-cover.song-select.page-cover(data-id='4')
+  .yug-cover.song-select.page-cover(data-id='5')
+  .yug-cover.song-select.page-cover(data-id='6')
+  .yug-cover.song-select.page-cover(data-id='7')
+  .kislorod-cover.song-select.page-cover(data-id='8')
+  .dym-cover.song-select.page-cover(data-id='9')
+  .song-select.page-cover(data-id='10')
+    .parallax-cont
+      .parallax
+        .left-piece.piece
+        .right-piece.piece
+  .buy-buttons
+    a.buy-button.buy-button--itunes(data-id='itunes', href='', title='Купить в iTunes', target='_blank')
+    a.buy-button.buy-button--google(data-id='google', href='', title='Купить в Google Play', target='_blank')
+    a.buy-button.buy-button--ya(data-id='yandex', href='', title='Доступно в Яндекс Музыка', target='_blank')
+  //
+    <div class="video-container song-select" data-id="0">
+    </div>
+    <div class="video-container song-select" data-id="1">
+    </div>
+    <div class="video-container song-select" data-id="2">
+    </div>
+    <div class="video-container song-select" data-id="3">
+    </div>
+    <div class="video-container song-select" data-id="4">
+    </div>
+    <div class="video-container song-select" data-id="5">
+    </div>
+    <div class="video-container song-select" data-id="7">
+    </div>
+  .video-container.song-select(data-id='6')
+    .video-inner
+      .videowrapper
+        iframe(frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+  .video-container.song-select(data-id='8')
+    .video-inner
+      .videowrapper
+        iframe(frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+  .video-container.song-select(data-id='9')
+    .video-inner
+      .videowrapper
+        iframe(frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+  .video-container.song-select(data-id='10')
+    .video-inner
+      .videowrapper
+        iframe(frameborder='0', allow='autoplay; encrypted-media', allowfullscreen='')
+  .contacts
+    | &Pcy;&ocy; &vcy;&scy;&iecy;&mcy; &vcy;&ocy;&pcy;&rcy;&ocy;&scy;&acy;&mcy; &pcy;&icy;&scy;&acy;&tcy;&softcy; &ncy;&acy; &pcy;&ocy;&chcy;&tcy;&ucy; - 
+    a(href='mailto:monadamusicru@gmail.com') monadamusicru@gmail.com
+  script(type='text/javascript', src='js/main.js')
